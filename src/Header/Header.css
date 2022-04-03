@@ -1,0 +1,16 @@
+.menubar{
+    padding: 20px;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+.navlink{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+.navlink:hover{
+    color: brown;
+}
+.navlink:active{
+    border-bottom: 2px solid red;
+}
