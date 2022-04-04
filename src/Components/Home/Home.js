@@ -4,7 +4,6 @@ import banner from '../../images/mouse.jpg'
 import CustomerReview from './CustomerReview/CustomerReview';
 import './Home.css'
 import useReview from './hook/useReview';
-import Review from './Review/Review';
 const Home = () => {
     const [reviews] = useReview();
     const navigate = useNavigate();
