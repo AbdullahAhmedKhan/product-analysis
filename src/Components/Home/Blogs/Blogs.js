@@ -7,7 +7,7 @@ const Blogs = () => {
             <div className='container shadow p-5 rounded bg-light border-start border-primary border-3 my-5'>
                 <h4 className='text-start text-primary'>What is context API?</h4>
                 <hr />
-                <p className='text-start'>Context API is a new feature added in version 16.3 of React that allows one to share state across the entire app lightly and with ease. 
+                <p className='text-start'>Context API is a new feature added in version 16.3 of React that allows one to share state across the entire app lightly and with ease.
                     The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.</p>
             </div>
             <div className='container shadow p-5 rounded bg-light border-start border-primary border-3 mb-5'>

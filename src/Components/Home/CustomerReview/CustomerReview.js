@@ -9,7 +9,7 @@ const CustomerReview = (props) => {
             <div className="card card-shadow h-100">
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Name: <span className='text-success'>{name}</span></h5>
+                    <h5 className="card-title">Name: <span className='text-warning'>{name}</span></h5>
                     <p className="card-text">{review}</p>
                     <small>Ratings: {ratings}</small>
                 </div>
