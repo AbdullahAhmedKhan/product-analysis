@@ -1,6 +1,9 @@
 # About This Web app
-* In this apps a product a gaming mouse 
-* In this apps a product a gaming mouse 
+* In this apps a product have been reviewed.
+* Some peoples reviewed of this product and given ratings.
+* Here also some important blogs included.
+* I tried here to make a glassy navbar.
+* It's a single page application. So reloading issue avoided.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
