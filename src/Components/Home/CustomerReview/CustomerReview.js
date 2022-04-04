@@ -17,7 +17,9 @@ const CustomerReview = (props) => {
                     <small>Ratings:{`  `}
                         {
                             ratings === 5 ? <span>  <FontAwesomeIcon className="text-warning" icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon><FontAwesomeIcon className="text-warning" icon={faStar}></FontAwesomeIcon></span> : ''
-                        }{
+
+                        }
+                        {
                             ratings === 4 ? <span><FontAwesomeIcon className="text-warning" icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-warning"></FontAwesomeIcon></span> : ''
                         }
                         {
