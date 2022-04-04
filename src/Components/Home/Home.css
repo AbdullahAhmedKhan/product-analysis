@@ -1,7 +1,9 @@
 .img-container img {
-    border-radius: 50px;
-    width: 500px;
-    padding: 0 10px;
+    border-radius: 30px;
+    width: 350px;
+    
+    border-radius: 20px;
+    border: 2px solid orange;
 }
 
 .details {
@@ -11,16 +13,15 @@
 }
 
 .details li {
-    background-color: beige;
+    background-color: whitesmoke;
     font-size: 12px;
     padding: 12px;
     margin: 10px;
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.details li:hover{
+    color: orangered;
+    transition: 0.3s ease-in-out;
 }

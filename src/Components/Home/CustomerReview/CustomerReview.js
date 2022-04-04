@@ -5,12 +5,12 @@ const CustomerReview = (props) => {
     const { name, img, review, ratings } = props.review;
     return (
 
-        <div class="col">
-            <div class="card">
-                <img src={img} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Name: {name}</h5>
-                    <p class="card-text">{review}</p>
+        <div className="col">
+            <div className="card card-shadow h-100">
+                <img src={img} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">Name: <span className='text-success'>{name}</span></h5>
+                    <p className="card-text">{review}</p>
                     <small>Ratings: {ratings}</small>
                 </div>
             </div>
