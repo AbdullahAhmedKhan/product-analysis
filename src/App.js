@@ -10,7 +10,7 @@ import Blogs from './Components/Home/Blogs/Blogs';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App mt-5 pt-5">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

@@ -15,7 +15,7 @@ const Dashboard = () => {
             <div className='row row-cols-1 row-cols-md-2 g-4'>
                 <div className='col'>
                     <div className='card'>
-                        <h4 className='p-2 text-primary'>Month Wise Sell</h4>
+                        <h4 className='p-2 text-success'>Month Wise Sell</h4>
                         <LineChart width={420} height={300} data={dashboard} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                             <Line type="monotone" dataKey="sell" stroke="#8884d8" />
                             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
@@ -26,8 +26,8 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='card'>
-                        <h4 className='p-2 text-primary'>Investment vs Revenue</h4>
+                    <div className='card ps-3'>
+                        <h4 className='p-2 text-success'>Investment vs Revenue</h4>
                         <AreaChart
                             width={420}
                             height={300}
@@ -50,8 +50,8 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='mt-5 card'>
-                        <h4 className='p-2 text-primary'>Investment vs Revenue</h4>
+                    <div className='mt-5 card p-3'>
+                        <h4 className='p-2 text-success'>Investment vs Revenue</h4>
                         <BarChart
                             width={420}
                             height={300}
@@ -74,8 +74,8 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='mt-5 card'>
-                        <h4 className='p-2 text-primary'>Investment vs Revenue</h4>
+                    <div className='mt-5 card p-3'>
+                        <h4 className='p-2 text-success'>Investment vs Revenue</h4>
                         <PieChart width={420} height={300}>
                             <Pie
                                 data={dashboard}

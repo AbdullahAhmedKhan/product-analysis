@@ -4,7 +4,7 @@ import useReview from '../hook/useReview';
 
 const Review = () => {
 
-        const [reviews, setReviews] = useReview();
+        const [reviews] = useReview();
     return (
         <div className='container'>
             <h2 className='mb-3'>Reviews</h2>

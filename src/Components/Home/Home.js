@@ -1,11 +1,17 @@
 import React from 'react';
 import banner from '../../images/mouse.jpg'
+import CustomerReview from './CustomerReview/CustomerReview';
 import './Home.css'
+import useReview from './hook/useReview';
 import Review from './Review/Review';
 const Home = () => {
+    const [reviews] = useReview();
+    const ShowAllReview = () => {
+        <Review></Review>
+    }
     return (
         <div>
-            <div className='container-body d-flex my-5 mx-auto justify-content-center align-items-center flex-sm-row flex-md-row'>
+            <div className='container-body d-lg-flex my-5 mx-auto justify-content-center align-items-center flex-sm-row flex-md-row'>
                 <div className='p-5'>
                     <h2>Razer DeathAdder V2 Pro</h2>
                     <h4 className='text-success'>Best Wireless Gaming Mouse</h4>
@@ -25,10 +31,16 @@ const Home = () => {
             </div>
             <div>
                 <h3>Customer Review</h3>
-                <hr className='w-50 mx-auto'/>
-                <Review></Review>
+                <hr className='w-50 mx-auto' />
+                <div className='row row-cols-1 row-cols-md-3 g-3 mt-3 mb-5'>
+                    {
+                        reviews.slice(0, 3).map(review => <CustomerReview key={review.id}
+                            review={review}></CustomerReview>)
+                    }
+                </div>
+                <button onClick={ShowAllReview} className='btn mb-5 btn-outline-success rounded px-3'>Show all review</button>
             </div>
-        </div>
+        </div >
     );
 };
 
