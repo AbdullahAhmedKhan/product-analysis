@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Area, BarChart, Legend, Bar, ResponsiveContainer, PieChart, Pie } from 'recharts';
-import { AreaChart, Are } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Area, BarChart, Legend, Bar, PieChart, Pie } from 'recharts';
+import { AreaChart } from 'recharts';
 
 const Dashboard = () => {
     const [dashboard, setDashboard] = useState([])
@@ -26,7 +26,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='card ps-3'>
+                    <div className='card ps-5'>
                         <h4 className='p-2 text-success'>Investment vs Revenue</h4>
                         <AreaChart
                             width={420}
@@ -35,13 +35,13 @@ const Dashboard = () => {
                             margin={{
                                 top: 10,
                                 right: 30,
-                                left: 0,
+                                left: 10,
                                 bottom: 0,
                             }}
                         >
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="month" />
-                            <YAxis />
+                            <YAxis/>
                             <Tooltip />
                             <Area type="monotone" dataKey="investment" stackId="1" stroke="#8884d8" fill="#8884d8" />
                             <Area type="monotone" dataKey="revenue" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
